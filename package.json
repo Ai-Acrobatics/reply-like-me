@@ -1,0 +1,33 @@
+{
+  "name": "reply-like-me",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Unified MCP server for Reply Like Me — Supabase + Pinecone + Obsidian + Notion",
+  "type": "module",
+  "bin": {
+    "rlm-mcp": "./dist/src/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/src/index.js",
+    "typecheck": "tsc --noEmit",
+    "generate-embeddings": "npx tsx scripts/generate-embeddings.ts",
+    "freshness-dashboard": "npx tsx scripts/generate-freshness-dashboard.ts",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.0",
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "@pinecone-database/pinecone": "^4.1.0",
+    "@supabase/supabase-js": "^2.49.0",
+    "dotenv": "^16.5.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "vitest": "^3.1.0",
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0"
+  }
+}
