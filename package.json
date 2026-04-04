@@ -1,0 +1,26 @@
+{
+  "name": "reply-like-me",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI messaging agent that responds on Julian's behalf matching his communication style",
+  "type": "module",
+  "scripts": {
+    "build": "tsc --noEmit",
+    "pipeline": "npx tsx src/index.ts",
+    "pipeline:run": "npx tsx src/index.ts run",
+    "pipeline:rebuild-profiles": "npx tsx src/index.ts rebuild-profiles",
+    "pipeline:health": "npx tsx src/index.ts health",
+    "migrate": "npx tsx scripts/migrate.ts",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.0",
+    "dotenv": "^16.5.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "vitest": "^3.1.0",
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0"
+  }
+}
