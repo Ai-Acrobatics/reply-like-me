@@ -15,3 +15,6 @@ OBSIDIAN_VAULT="${OBSIDIAN_VAULT:-/opt/agency-workspace/obsidian-vault}" /opt/ag
 
 Load the cited MOCs, SOPs, Laws, and project files before editing or debugging. Verify live evidence before reporting status. If blocked, name the exact missing file, auth, service, platform signal, or source-of-truth mismatch. Write durable workflow/source changes back to the vault or memory.
 <!-- AI_ACROBATICS_SOURCE_PREFLIGHT_END -->
+
+## Graphify and Graft
+Use the repo-local graphify-out graph for structural context and query it before broad exploration. Use repo-local Graft wiring via \`graft ask\`/\`graft check\`; keep generated /graft/ cache uncommitted.
